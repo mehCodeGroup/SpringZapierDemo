@@ -18,4 +18,8 @@ public class PersonService {
         return personRepository.save(p);
     }
 
+    public Person finderPersonById(int id){
+        return personRepository.findOne(id);
+    }
+
 }
